@@ -1,9 +1,10 @@
-#Image Steganography in C
-##📌 Overview
+# Image Steganography in C
+
+## 📌 Overview
 
 This project implements Image Steganography using the Least Significant Bit (LSB) technique in C. It allows users to hide a secret text file inside a BMP image and later retrieve the hidden information without visibly altering the image.
 
-##🚀 Features
+## 🚀 Features
 Encode a secret text file into a BMP image
 Decode and recover hidden data from the stego image
 Validation of input files and formats
@@ -11,7 +12,7 @@ Capacity checking before encoding
 Supports command-line arguments
 Binary file handling and bit-level manipulation
 
-##🛠️ Technologies Used
+## 🛠️ Technologies Used
 C Programming
 File Handling
 Bitwise Operators
@@ -19,7 +20,7 @@ Structures
 Command Line Arguments
 Modular Programming
 
-##📂 Project Structure
+## 📂 Project Structure
 .
 ├── main.c
 ├── encode.c
@@ -29,7 +30,7 @@ Modular Programming
 ├── decode.h
 └── README.md
 
-##⚙️ How It Works
+## ⚙️ How It Works
 Encoding Process
 Read the source BMP image.
 Validate image capacity.
@@ -42,22 +43,22 @@ Extract metadata.
 Recover the hidden file.
 Write the decoded content to an output file.
 
-##▶️ Compilation
+## ▶️ Compilation
 gcc *.c -o stego
 
-##🔐 Encoding
+## 🔐 Encoding
 ./stego -e beautiful.bmp secret.txt output.bmp
 
-##Example
+## Example
 ./stego -e beautiful.bmp secret.txt stego.bmp
 
-##🔓 Decoding
+## 🔓 Decoding
 ./stego -d stego.bmp output.txt
 
-##Example
+## Example
 ./stego -d stego.bmp decoded.txt
 
-##💡 Concepts Learned
+## 💡 Concepts Learned
 Binary File Operations
 Image Data Processing
 Bitwise Manipulation
@@ -66,12 +67,12 @@ Memory Management
 Modular Software Design
 Error Handling and Validation
 
-##🎯 Learning Outcome
+## 🎯 Learning Outcome
 
 This project provided hands-on experience with real-world applications of C programming, particularly in file handling, bitwise operations, and data security concepts. It strengthened my understanding of low-level programming and modular software development.
 
-##📸 Sample Execution
-###Encoding
+## 📸 Sample Execution
+### Encoding
 ./stego -e beautiful.bmp secret.txt output.bmp
 
 Validation Done
@@ -80,7 +81,7 @@ Reading image dimensions
 Checking capacity
 Encoding successful
 
-###Decoding
+### Decoding
 ./stego -d output.bmp decoded.txt
 
 Decoding successful
